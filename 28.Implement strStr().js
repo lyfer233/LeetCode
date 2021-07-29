@@ -8,7 +8,7 @@ var strStr = function(haystack, needle) {
     answer = -1;
     for (let i = 0; i < haystack.length; i++) {
         flag = true;
-        if (i + needle.length >= haystack.length) break;
+        if (i + needle.length > haystack.length) break;
         for (let j = 0; j < needle.length; j++) {
             if (haystack[i + j] !== needle[j]) {
                 flag = false;
